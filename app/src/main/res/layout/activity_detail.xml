@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#C5AEEF"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_arc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_arc" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/textView39"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text=" le nom"
+            app:layout_constraintBottom_toTopOf="@+id/nomd"
+            app:layout_constraintStart_toStartOf="@+id/nomd" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Détails de l'acheteur"
+            android:textSize="24sp"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nomd"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="nom"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/prenomd"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="prénom"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/nomd"
+            app:layout_constraintStart_toStartOf="@+id/nomd"
+            app:layout_constraintTop_toBottomOf="@+id/nomd" />
+
+        <TextView
+            android:id="@+id/textView42"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" le prenom"
+            app:layout_constraintBottom_toTopOf="@+id/prenomd"
+            app:layout_constraintStart_toStartOf="@+id/prenomd" />
+
+        <EditText
+            android:id="@+id/emaild"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="email"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/prenomd"
+            app:layout_constraintStart_toStartOf="@+id/prenomd"
+            app:layout_constraintTop_toBottomOf="@+id/prenomd" />
+
+        <TextView
+            android:id="@+id/textView43"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" email"
+            app:layout_constraintBottom_toTopOf="@+id/emaild"
+            app:layout_constraintStart_toStartOf="@+id/emaild" />
+
+        <EditText
+            android:id="@+id/pass2"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="password"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/emaild"
+            app:layout_constraintStart_toStartOf="@+id/emaild"
+            app:layout_constraintTop_toBottomOf="@+id/emaild" />
+
+        <TextView
+            android:id="@+id/textView44"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" le mot de passe "
+            app:layout_constraintBottom_toTopOf="@+id/pass2"
+            app:layout_constraintStart_toStartOf="@+id/pass2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundbtn"
+            android:text="modifier"
+            app:layout_constraintEnd_toEndOf="@+id/pass2"
+            app:layout_constraintStart_toStartOf="@+id/pass2"
+            app:layout_constraintTop_toBottomOf="@+id/pass2" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:textColor="@color/white"
+
+            android:text="supprimer definitivement cet acheteur "
+            app:layout_constraintEnd_toEndOf="@+id/button3"
+            app:layout_constraintStart_toStartOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

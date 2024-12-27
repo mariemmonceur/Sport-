@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5AEEF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="500dp"
+        android:layout_height="648dp"
+        android:src="@drawable/top_arc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_arc" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backk">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ajout d'un acheteur"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/prénom"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="Votre prénom svp"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="Votre nom svp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/prénom"
+            app:layout_constraintStart_toStartOf="@+id/prénom"
+            app:layout_constraintTop_toBottomOf="@+id/prénom" />
+
+        <EditText
+            android:id="@+id/pre"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="exemple@email.com"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/nom"
+            app:layout_constraintStart_toStartOf="@+id/nom"
+            app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+        <EditText
+            android:id="@+id/passw"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="password"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/pre"
+            app:layout_constraintStart_toStartOf="@+id/pre"
+            app:layout_constraintTop_toBottomOf="@+id/pre" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/material_dynamic_tertiary50"
+            android:text="Ajouter"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/passw"
+            app:layout_constraintStart_toStartOf="@+id/passw"
+            app:layout_constraintTop_toBottomOf="@+id/passw" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/roundbtn"
+        android:text="Voir la liste de tous les acheteurs "
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

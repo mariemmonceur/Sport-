@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projet_pfa1"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".page_commande"
+            android:exported="false" />
+        <activity
+            android:name=".paymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addAdress"
+            android:exported="false" />
+        <activity
+            android:name=".address"
+            android:exported="false" />
+        <activity
+            android:name=".detail_panier"
+            android:exported="false" />
+        <activity
+            android:name=".tous_produits"
+            android:exported="false" />
+        <activity
+            android:name=".detail_categorie"
+            android:exported="false" />
+        <activity
+            android:name=".produits_de_categories"
+            android:exported="false" />
+        <activity
+            android:name=".detailproduit"
+            android:exported="false" />
+        <activity
+            android:name=".gerer_categorie"
+            android:exported="false" />
+        <activity
+            android:name=".ajout_categorie"
+            android:exported="false" />
+        <activity
+            android:name=".CatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ajout_produit"
+            android:exported="false" />
+        <activity
+            android:name=".LoginVendeur"
+            android:exported="false" />
+        <activity
+            android:name=".espace_vendeur"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivityvendeur"
+            android:exported="false" />
+        <activity
+            android:name=".vendeur_list"
+            android:exported="false"
+            android:label="@string/title_activity_vendeur_list"
+            android:theme="@style/Theme.Projet_pfa1.NoActionBar" />
+        <activity
+            android:name=".gere_vendeur"
+            android:exported="false" />
+        <activity
+            android:name=".AcceuilActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_acceuil2"
+            android:theme="@style/Theme.Projet_pfa1.NoActionBar" />
+        <activity
+            android:name=".InscrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAcheteur"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity0"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListAcheteur"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

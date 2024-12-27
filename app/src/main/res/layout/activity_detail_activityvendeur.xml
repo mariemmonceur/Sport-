@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5AEEF"
+    android:orientation="vertical"
+
+    tools:context=".DetailActivityvendeur">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView47"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" numero de telephone "
+            app:layout_constraintBottom_toTopOf="@+id/emaild2"
+            app:layout_constraintStart_toStartOf="@+id/emaild2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Détails de vendeur "
+            android:textSize="24sp"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nomd"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="nom"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView45"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="le nom"
+            app:layout_constraintBottom_toTopOf="@+id/nomd"
+            app:layout_constraintStart_toStartOf="@+id/nomd" />
+
+        <EditText
+            android:id="@+id/prenomd"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="prénom"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/nomd"
+            app:layout_constraintStart_toStartOf="@+id/nomd"
+            app:layout_constraintTop_toBottomOf="@+id/nomd" />
+
+        <TextView
+            android:id="@+id/textView46"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="le prenom"
+            app:layout_constraintBottom_toTopOf="@+id/prenomd"
+            app:layout_constraintStart_toStartOf="@+id/prenomd" />
+
+        <EditText
+            android:id="@+id/emaild2"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="tel"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/prenomd"
+            app:layout_constraintStart_toStartOf="@+id/prenomd"
+            app:layout_constraintTop_toBottomOf="@+id/prenomd" />
+
+        <EditText
+            android:id="@+id/emaild"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="raison sociale"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/emaild2"
+            app:layout_constraintStart_toStartOf="@+id/emaild2"
+            app:layout_constraintTop_toBottomOf="@+id/emaild2" />
+
+        <TextView
+            android:id="@+id/textView48"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" la raison sociale"
+            app:layout_constraintBottom_toTopOf="@+id/emaild"
+            app:layout_constraintStart_toStartOf="@+id/emaild" />
+
+        <EditText
+            android:id="@+id/pass3"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="password"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/emaild"
+            app:layout_constraintStart_toStartOf="@+id/emaild"
+            app:layout_constraintTop_toBottomOf="@+id/emaild" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_arc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/top_arc" />
+
+        <TextView
+            android:id="@+id/textView49"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" le mot de passe "
+            app:layout_constraintBottom_toTopOf="@+id/pass3"
+            app:layout_constraintStart_toStartOf="@+id/pass3" />
+
+        <EditText
+            android:id="@+id/pass2"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:hint="email"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/pass3"
+            app:layout_constraintStart_toStartOf="@+id/pass3"
+            app:layout_constraintTop_toBottomOf="@+id/pass3" />
+
+        <TextView
+            android:id="@+id/textView50"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" le email"
+            app:layout_constraintBottom_toTopOf="@+id/pass2"
+            app:layout_constraintStart_toStartOf="@+id/pass2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundbtn"
+            android:text="modifier le vendeur "
+            app:layout_constraintEnd_toEndOf="@+id/pass2"
+            app:layout_constraintStart_toStartOf="@+id/pass2"
+            app:layout_constraintTop_toBottomOf="@+id/pass2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:background="#FF0000"
+        android:text="supprimer definitivement le vendeur "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+        tools:textSize="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

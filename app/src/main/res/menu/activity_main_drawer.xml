@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+
+
+ <item android:title="">
+     <menu>
+
+         <group android:checkableBehavior="single">
+             <item
+                 android:id="@+id/nav_Acceuil"
+                 android:icon="@drawable/ic_home"
+                 android:title="Acceuil" />
+             <item
+                 android:id="@+id/nav_compte"
+                 android:icon="@drawable/ic_account"
+                 android:title="Mon Compte" />
+             <item
+                 android:id="@+id/nav_panier"
+                 android:icon="@drawable/_ic_panier"
+                 android:title="Panier" />
+             <item
+                 android:id="@+id/nav_categorie"
+                 android:icon="@drawable/ic_categorie"
+                 android:title="Categories" />
+         </group>
+
+     </menu>
+ </item>
+
+
+
+</menu>
